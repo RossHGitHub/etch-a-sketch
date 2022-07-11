@@ -28,3 +28,12 @@ body {
     width: 60px;
     height: 60px;
 }
+
+.boxHover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+}
