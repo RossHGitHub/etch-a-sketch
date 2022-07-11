@@ -1,0 +1,9 @@
+* {
+    background-color: rgb(224, 222, 222);
+}
+
+#container {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
