@@ -1,6 +1,6 @@
 let body = document.querySelector('body');
 let container = document.getElementById('container');
-
+let boxes = document.createElement('div');
 
 function generate(userAns) {
     
@@ -18,9 +18,13 @@ for (let i=0;i<(userAns*userAns); i++) {
 let button = document.getElementById('btn');
 
 button.addEventListener('click', ()=>{
-    let userAns = prompt('New grid size? (Max 100)');
 
-    if(userAns>100){
-        alert('Too high! MAX: 100.')
+        let userAns = prompt('New grid size? (Max 100)');
+    if(userAns>100 || userAns <=0){
+        alert('Between 1 and 100 please.')
     } else{
+
+        while(container.firstChild) {
+            container.removeChild(container.firstChild);
+        }
 generate(userAns);}})
