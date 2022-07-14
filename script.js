@@ -11,7 +11,8 @@ for (let i=0;i<(userAns*userAns); i++) {
     let boxes = document.createElement('div');
     boxes.classList='boxes';
     container.appendChild(boxes);
-    boxes.addEventListener('mouseover', () =>{boxes.classList = 'boxHover'});
+    boxes.addEventListener('mouseover', () =>{boxes.classList = 'boxHover';
+});
 }
 }
 
